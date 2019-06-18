@@ -5,7 +5,8 @@
     [AuthorID] INT NULL, 
     [PublisherID] INT NULL, 
     [PublishedDate] DATETIME NULL, 
-    [Price] DECIMAL(18, 2) NULL, 
+    [Price] DECIMAL(18, 2) NULL, 	
+    [isActive] BIT NULL, 
     CONSTRAINT [FK_Book_Author] FOREIGN KEY (AuthorID) REFERENCES Author(ID), 
     CONSTRAINT [FK_Book_Publisher] FOREIGN KEY (PublisherID) REFERENCES Publisher([Id])
 )
