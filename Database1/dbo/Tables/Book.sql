@@ -8,6 +8,7 @@
     [Price] DECIMAL(18, 2) NULL, 	
     [isActive] BIT NULL, 
 	[Code] INT NULL,
+	[BoodCode] INT NULL,
     CONSTRAINT [FK_Book_Author] FOREIGN KEY (AuthorID) REFERENCES Author(ID), 
     CONSTRAINT [FK_Book_Publisher] FOREIGN KEY (PublisherID) REFERENCES Publisher([Id])
 )
