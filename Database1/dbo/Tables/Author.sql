@@ -3,6 +3,7 @@
 	[Id] INT NOT NULL PRIMARY KEY, 
     [Name] NVARCHAR(50) NOT NULL, 
     [DateOfBirth] DATETIME NULL, 
-    [Place] NVARCHAR(50) NULL,
-    [isActive] BIT NULL
+    [Place] NVARCHAR(50) NULL
+    
+	
 )
